@@ -4,56 +4,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-    </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>MDCAT Marks Calculator</title>
 </head>
 <body>
-    
-        <div class="calculator">
-            <h1>MDCAT Aggregate Calculator</h1>
+    <div class="calculator">
+        <div class='ball orange'></div>
+        <div class='ball red'></div>
+        <div class='ball purple'></div>
+        <div class='ball green'></div>
+        <div class="form-container">
+            <div class='title'>
+                MDCAT AGGREGATE CALCULATOR
+            </div>
             <form>
-                <div class="fieldset">
-                    <label for="matric">Matric Marks <span class="marks">(xxxx / 1100)</span></label>
+                <div class="input">
                     <input id="matric" type="number" placeholder="1060" min="0" max="1100">
+                    <label for="matric" class='title'>MATRIC MARKS (OUT OF 1100)</label>
+                    <div id="matric-alert" class="alert alert-warning" role="alert">
+                        Please enter the Matric marks <b>less than or equal to 1100</b>.
+                    </div>
                 </div>
-                <div id="matric-alert" class="alert alert-warning" role="alert">
-                    Please enter the Matric marks <b>less than or equal to 1100</b>.
-                </div>
-                <div class="fieldset">
-                    <label for="inter">Intermediate Marks <span class="marks">(xxxx / 1100)</span></label>
+                <div class="input">
                     <input id="inter" type="number" placeholder="1030" min="0" max="1100">
+                    <label for="inter" class='title'>INTERMEDIATE MARKS (OUT OF 1100)</label>
+                    <div id="inter-alert" class="alert alert-warning" role="alert">
+                        Please enter the Intermediate marks <b>less than or equal to 1100</b>.
+                    </div>
                 </div>
-                <div id="inter-alert" class="alert alert-warning" role="alert">
-                    Please enter the Intermediate marks <b>less than or equal to 1100</b>.
-                </div>
-                <div class="fieldset">
-                    <label for="mdcat">MDCAT Marks <span class="marks">(xxx / 200)</span></label>
+                <div class="input">
                     <input id="mdcat" type="number" placeholder="180" min="0" max="200">
+                    <label for="mdcat" class='title'>MDCAT MARKS (OUT OF 200)</label>
+                    <div id="mdcat-alert" class="alert alert-warning" role="alert">
+                        Please enter the MDCAT marks <b>less than or equal to 200</b>.
+                    </div>
                 </div>
-                <div id="mdcat-alert" class="alert alert-warning" role="alert">
-                    Please enter the MDCAT marks <b>less than or equal to 200</b>.
-                </div>
-                <div class="fieldset">
-                    <button class="btn btn-info  btn-block" type="submit" id="submit-button"  onclick="return calculate()">Calculate</button>
+                <div class="input">
+                    <button class="button" type="submit" id="submit-button"  onclick="return calculate()">Calculate</button>
                 </div>
             </form>
             <div class="aggregate-container">
-                <p>Your Aggregate</p>
                 <h2 id="aggregate">0%</h2>
-                <div class="progress" style="height: 25px; margin-top: 20px;">
-                    <div id="progress-bar" class="progress-bar bg-info" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
+            </div>
+            <div class="progress" style="height: 25px; margin-top: 20px;">
+                <div id="progress-bar" class="progress-bar bg-info" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <div class="developer">
                 <p>Developed by: Ali Azlan</p>
             </div>
         </div>
-    
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 function calculate() {
     const matric = document.getElementById('matric').value;
     const matricAlert = document.getElementById('matric-alert');
@@ -11,6 +12,7 @@ function calculate() {
     const progressBar = document.getElementById('progress-bar');
 
     let aggregate = document.getElementById('aggregate');
+
     if (matric >= 0 && matric <= 1100 && inter >= 0 && inter <= 1100 && mdcat >= 0 && mdcat <= 200) {
         //Removes any previous alert boxes
         matricAlert.style.display = 'none'; 
