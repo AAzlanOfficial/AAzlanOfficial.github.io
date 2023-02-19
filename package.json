@@ -1,25 +1,13 @@
 {
-  "name": "aazlanofficial.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
   "scripts": {
-    "test": "jest",
-    "dev": "npx tailwindcss -i ./learningplan/src/input.css -o ./learningplan/src/output.css --watch"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AAzlanOfficial/AAzlanOfficial.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AAzlanOfficial/AAzlanOfficial.github.io/issues"
-  },
-  "homepage": "https://github.com/AAzlanOfficial/AAzlanOfficial.github.io#readme",
-  "devDependencies": {
-    "jest": "^29.4.3",
-    "tailwindcss": "^3.2.7"
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

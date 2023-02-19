@@ -6,74 +6,18 @@
   <link href="output.css" rel="stylesheet">
   <title>Ali Azlan - GitHub</title>
 </head>
-<body class="bg-gray-50">
+<body>
+    <label for="days-input">Days Available:</label>
+    <input type="text" id="days-input">
+    <label for="hours-per-day">Hours Each Day:</label>
+    <input type="text" id="hours-per-day">
+    <!-- Checkboxes -->
+    <label><input type="checkbox" name="topics" value="topic1"> Topic 1</label>
+    <label><input type="checkbox" name="topics" value="topic2"> Topic 2</label>
+    <label><input type="checkbox" name="topics" value="topic3"> Topic 3</label>
 
+    <button id="submitBtn">Submit</button>
 
-  <section class="flex flex-row justify-center flex-wrap antialiased  text-gray-600  p-4">
-    
-        <!-- Card -->
-        <div class="max-w-xs m-6">
-            <div class="flex flex-col  bg-white shadow-lg rounded-lg overflow-hidden">
-                <!-- Image -->
-                <a class="block focus:outline-none focus-visible:ring-2" href="#0">
-                    <figure class="relative h-0 pb-[56.25%] overflow-hidden">
-                        <img class="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src="https://res.cloudinary.com/dc6deairt/image/upload/v1638284256/course-img_tf0g8c.png" width="320" height="180" alt="Course">
-                    </figure>
-                </a>
-                <!-- Card Content -->
-                <div class="flex-grow flex flex-col p-5">
-                    <!-- Card body -->
-                    <div class="flex-grow">
-                        <!-- Header -->
-                        <header class="mb-3">
-                            <a class="block focus:outline-none focus-visible:ring-2" href="#0">
-                                <h3 class="text-[22px] text-gray-900 font-extrabold leading-snug">MDCAT Aggregate Calculator</h3>
-                            </a>
-                        </header>
-                        <!-- Content -->
-                        <div class="mb-8">
-                            <p>Calculate your MDCAT Aggregate.</p>
-                        </div>
-                    </div>
-                    <!-- Card footer -->
-                    <div class="flex justify-center">
-                        <a class="font-semibold text-sm inline-flex items-center justify-center px-6 py-1.5 border border-transparent rounded leading-5 shadow-sm transition duration-150 ease-in-out bg-indigo-500 focus:outline-none focus-visible:ring-2 hover:bg-indigo-700 text-white" href="#0">View the Project</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card -->
-        <div class="max-w-xs m-6">
-            <div class="flex flex-col  bg-white shadow-lg rounded-lg overflow-hidden">
-                <!-- Image -->
-                <a class="block focus:outline-none focus-visible:ring-2" href="#0">
-                    <figure class="relative h-0 pb-[56.25%] overflow-hidden">
-                        <img class="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src="https://res.cloudinary.com/dc6deairt/image/upload/v1638284256/course-img_tf0g8c.png" width="320" height="180" alt="Course">
-                    </figure>
-                </a>
-                <!-- Card Content -->
-                <div class="flex-grow flex flex-col p-5">
-                    <!-- Card body -->
-                    <div class="flex-grow">
-                        <!-- Header -->
-                        <header class="mb-3">
-                            <a class="block focus:outline-none focus-visible:ring-2" href="#0">
-                                <h3 class="text-[22px] text-gray-900 font-extrabold leading-snug">MDCAT Aggregate Calculator</h3>
-                            </a>
-                        </header>
-                        <!-- Content -->
-                        <div class="mb-8">
-                            <p>Calculate your MDCAT Aggregate.</p>
-                        </div>
-                    </div>
-                    <!-- Card footer -->
-                    <div class="flex justify-center">
-                        <a class="font-semibold text-sm inline-flex items-center justify-center px-6 py-1.5 border border-transparent rounded leading-5 shadow-sm transition duration-150 ease-in-out bg-indigo-500 focus:outline-none focus-visible:ring-2 hover:bg-indigo-700 text-white" href="#0">View the Project</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <script src="./script.js"></script>
 </body>
 </html>
