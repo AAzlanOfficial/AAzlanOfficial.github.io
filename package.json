@@ -4,7 +4,8 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "dev": "npx tailwindcss -i ./learningplan/src/input.css -o ./learningplan/src/output.css --watch"
   },
   "repository": {
     "type": "git",
