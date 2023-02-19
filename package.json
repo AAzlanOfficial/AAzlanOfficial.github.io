@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/AAzlanOfficial/AAzlanOfficial.github.io#readme",
   "devDependencies": {
-    "jest": "^29.4.3"
+    "jest": "^29.4.3",
+    "tailwindcss": "^3.2.7"
   }
 }
