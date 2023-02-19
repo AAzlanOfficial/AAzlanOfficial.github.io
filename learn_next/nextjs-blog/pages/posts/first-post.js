@@ -9,10 +9,7 @@ export default function FirstPost() {
       <Head>
         <title>First Post</title>
       </Head>
-      <h1>First Post</h1>
-      <h2>
-        <Link href="/">Back to home</Link>
-      </h2>
+      <h1>This is my first post on react. A long way to go.</h1>
     </Layout>
   );
 }
