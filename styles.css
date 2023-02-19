@@ -111,6 +111,11 @@ input {
     border-color: #2e3c55;
 }
 
+.form-container .input input:focus:invalid {
+    outline: none;
+    border-color: red;
+}
+
 .form-container .input input:focus + label {
     color: #2e3c55;
     font-size: 13px;
@@ -144,8 +149,8 @@ input {
 .aggregate-container {
     display: flex;
     align-items: center;
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     background-color: #253044;
     color: white;
     margin: auto;

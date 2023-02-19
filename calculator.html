@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="MDCAT Aggregate Calculator">
+    <meta name="description" content="Calculate your MDCAT Aggregate in seconds!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- OPEN GLOBAL PROTOCOL -->
+
+    <meta property="og:title" content="MDCAT Aggregate Calculator">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>MDCAT Marks Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class='ball orange'></div>
+        <div class='ball red'></div>
+        <div class='ball purple'></div>
+        <div class='ball green'></div>
+        <div class="form-container">
+            <div class='title'>
+                MDCAT AGGREGATE CALCULATOR
+            </div>
+            <form>
+                <div class="input">
+                    <input id="matric" type="number" placeholder="1060" min="0" max="1100" title="MATRIC MARKS (OUT OF 1100)">
+                    <label for="matric" class='title'>
+                        MATRIC MARKS (OUT OF 1100)
+                    </label>
+                    <div id="matric-alert" class="alert alert-warning" role="alert">
+                        Please enter the Matric marks <b>less than or equal to 1100</b>.
+                    </div>
+                </div>
+                <div class="input">
+                    <input id="inter" type="number" placeholder="1030" min="0" max="1100" title="INTERMEDIATE MARKS (OUT OF 1100)">
+                    <label for="inter" class='title'>
+                        INTERMEDIATE MARKS (OUT OF 1100)
+                    </label>
+                    <div id="inter-alert" class="alert alert-warning" role="alert">
+                        Please enter the Intermediate marks <b>less than or equal to 1100</b>.
+                    </div>
+                </div>
+                <div class="input">
+                    <input id="mdcat" type="number" placeholder="180" min="0" max="200" title="MDCAT MARKS (OUT OF 200)">
+                    <label for="mdcat" class='title'>
+                        MDCAT MARKS (OUT OF 200)
+                    </label>
+                    <div id="mdcat-alert" class="alert alert-warning" role="alert">
+                        Please enter the MDCAT marks <b>less than or equal to 200</b>.
+                    </div>
+                </div>
+                <div class="input">
+                    <button class="button" type="submit" id="submit-button"  onclick="return calculate()">Calculate</button>
+                </div>
+            </form>
+            <div class="aggregate-container">
+                <h2 id="aggregate">0%</h2>
+            </div>
+            <div class="progress" style="height: 25px; margin-top: 20px;">
+                <div id="progress-bar" class="progress-bar bg-info" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="developer">
+                <p>Developed by: Ali Azlan</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

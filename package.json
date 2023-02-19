@@ -1,0 +1,23 @@
+{
+  "name": "aazlanofficial.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AAzlanOfficial/AAzlanOfficial.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AAzlanOfficial/AAzlanOfficial.github.io/issues"
+  },
+  "homepage": "https://github.com/AAzlanOfficial/AAzlanOfficial.github.io#readme",
+  "devDependencies": {
+    "jest": "^29.4.3"
+  }
+}
