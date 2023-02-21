@@ -15,7 +15,8 @@ export default function Home() {
           (This is my website - I am building it through{' '}
           <a href="https://nextjs.org/learn">Next.js tutorial</a>.)
         </p>
-        <Link className="underline font-bold" href="./posts/first-post">My First Post</Link>
+        <Link className="underline font-bold" href="./posts/first-post">My First Post</Link><br />
+        <Link className="underline font-bold" href="./posts/mdcat-schedule">MDCAT Schedule Generator</Link>
       </section>
     </Layout>
   );

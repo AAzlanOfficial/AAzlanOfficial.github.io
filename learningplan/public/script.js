@@ -1,24 +1,36 @@
 
-const submitBtn = document.getElementById('submitBtn');
+// CHAPTERS ACCORDIAN
+document.getElementById("accordion-btn").onclick = function() {accordionClick()};
 
-// Object that maps topic difficulty levels to the number of times it should be studied
-const difficultyMap = {
-    easy: 1,
-    medium: 2,
-    hard: 3
-};
+function accordionClick() {
+  document.getElementById("accordion-content").classList.toggle("show");
+}
 
 const topics = {
-    topic1: "easy",
-    topic2: "medium",
-    topic3: "hard"
+  'topic1': 'medium',
+  'topic2': 'hard',
+  'topic3': 'easy'
 };
 
-submitBtn.addEventListener('click', () => {
-    const daysLeft = parseInt(document.getElementById('days-input').value);
-    const hoursPerDay = parseInt(document.getElementById('hours-per-day').value)
+const difficultyMap = {
+  'easy': 1,
+  'medium': 2,
+  'hard': 3
+};
 
-    // Filter the topics that the student has checked
+const submitBtn = document.getElementById('submitBtn');
+submitBtn.addEventListener('click', () => {
+
+let startDate = new Date(document.getElementById("start-date").value);
+let endDate = new Date(document.getElementById("end-date").value);
+let hoursPerDay = document.getElementById("hours-per-day").value;
+
+// Calculate the total number of days available for preparation
+const oneDay = 24 * 60 * 60 * 1000;
+const daysLeft = Math.round(Math.abs((endDate - startDate) / oneDay) + 1);
+
+
+// Filter the topics that the student has checked
 const checkedTopics = [];
 const checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
 checkboxes.forEach((checkbox) => {
@@ -51,9 +63,10 @@ if (timeAllocated < totalHoursAvailable) {
 }
 
 // Display the study plan
+let currentDate = new Date(startDate.getTime());
 let day = 1;
 let hoursLeft = hoursPerDay;
-for (let i = 0; i < daysLeft; i++) {
+while (currentDate <= endDate) {
   let topicsForDay = [];
   let totalHoursForDay = 0;
   while (hoursLeft > 0 && checkedTopics.length > 0) {
@@ -71,11 +84,9 @@ for (let i = 0; i < daysLeft; i++) {
       hoursLeft = 0;
     }
   }
-  console.log('Day ' + day + ': ' + topicsForDay.join(', ') + ' (Total ' + totalHoursForDay + ' hours)');
+  console.log(currentDate.toLocaleDateString() + ': ' + topicsForDay.join(', ') + ' (Total ' + totalHoursForDay + ' hours)');
+  currentDate.setDate(currentDate.getDate() + 1);
   day++;
   hoursLeft = hoursPerDay;
 }
-});
-
-
-
+})

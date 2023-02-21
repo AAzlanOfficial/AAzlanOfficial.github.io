@@ -1,0 +1,13 @@
+/* CHAPTERS ACCORDIAN */
+
+#accordion-content {
+    display: none;
+}
+
+#accordion-content.show {
+    display: block;
+}
+
+#arrow-down {
+    transform: rotate(0deg);
+}
