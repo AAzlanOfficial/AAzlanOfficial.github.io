@@ -1452,6 +1452,11 @@ video {
   background-color: rgb(221 214 254 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-violet-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 233 254 / var(--tw-bg-opacity));
+}
+
 .focus\:border-transparent:focus {
   border-color: transparent;
 }
@@ -1459,6 +1464,11 @@ video {
 .focus\:bg-slate-50:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.focus\:bg-violet-100:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 233 254 / var(--tw-bg-opacity));
 }
 
 .focus\:outline-none:focus {
