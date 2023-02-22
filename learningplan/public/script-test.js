@@ -38,6 +38,16 @@ const chapters = {
         difficulty : 3
     }
 }
+
+const toggleButton = document.getElementById('div-b');
+const exampleCheckboxes = document.querySelectorAll('input[name="b"]');
+let areAllChecked = true;
+
+toggleButton.addEventListener('click', () => {
+  areAllChecked = !areAllChecked; // toggle the state
+  exampleCheckboxes.forEach(checkbox => checkbox.checked = areAllChecked);
+});
+
   
 const submitBtn = document.getElementById('submitBtn');
 const studyPlanContainer = document.getElementById("study-plan-container");
@@ -45,7 +55,6 @@ const studyPlanContainer = document.getElementById("study-plan-container");
 submitBtn.addEventListener('click', () => {
     
   studyPlanContainer.innerHTML = '';
-  document.getElementById("accordion-content").classList.toggle("show");
 
     let startDate = new Date(document.getElementById("start-date").value);
     let endDate = new Date(document.getElementById("end-date").value);
