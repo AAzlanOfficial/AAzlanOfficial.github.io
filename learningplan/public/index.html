@@ -7,96 +7,157 @@
   <link rel="stylesheet" href="styles.css">
   <title>Ali Azlan - GitHub</title>
 </head>
-<body class="bg-slate-100 flex justify-center items-center">
+<body class="bg-slate-100 flex justify-center items-center selection:bg-fuchsia-300 selection:text-fuchsia-900">
   <div class="flex flex-col justify-center items-center w-full m-10 p-5 bg-white rounded-2xl shadow-xl">
-    <div class="flex flex-col md:flex-row flex-wrap justify-center items-start w-full p-8 print:hidden">
-
-      <div class="group flex justify-center items-center flex-row p-5 mx-2 rounded-full hover:bg-slate-50 focus:bg-slate-50 transition duration-400">
-        <div class="flex justify-center items-center mr-4 w-12 h-12 rounded-full bg-violet-100 group-hover:bg-violet-200 group-focus:bg-violet-200 transition duration-400">
-          <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path class="stroke-violet-700 group-hover:stroke-violet-800 group-focus:stroke-violet-800 transition duration-400" stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-          </svg>
+    <div class="flex flex-col justify-center items-center">
+      <div class="flex flex-col md:flex-row flex-wrap justify-center items-start p-8 print:hidden">
+        <div class="group flex justify-center items-center flex-row py-5 px-2 md:p-5 md:mx-2 rounded hover:bg-slate-50 focus:bg-slate-50 transition duration-400">
+          <div class="flex justify-center items-center mr-4 w-12 h-12 rounded bg-violet-100 group-hover:bg-violet-200 group-focus:bg-violet-200 transition duration-400">
+            <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path class="stroke-violet-700 group-hover:stroke-violet-800 group-focus:stroke-violet-800 transition duration-400" stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+            </svg>
+          </div>
+          <div>
+            <label class="font-semibold" for="start-date">START DATE</label>
+            <input class="block mt-2 w-full outline-none border-b-2 border-violet-600 focus:border-transparent focus:outline-2 focus:outline-violet-600" type="date" id="start-date" name="start-date">
+          </div>
         </div>
-        <div>
-          <label class="font-semibold" for="start-date">START DATE</label>
-          <input class="block mt-2 w-full outline-none border-b-2 border-violet-600 focus:border-transparent focus:outline-2 focus:outline-violet-600" type="date" id="start-date" name="start-date">
+
+        <div class="group flex justify-center items-center flex-row py-5 px-2 md:p-5 md:mx-2 rounded hover:bg-slate-50 focus:bg-slate-50 transition duration-400">
+          <div class="flex justify-center items-center mr-4 w-12 h-12 rounded bg-violet-100 group-hover:bg-violet-200 group-focus:bg-violet-200 transition duration-400">
+            <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path class="stroke-violet-700 group-hover:stroke-violet-800 group-focus:stroke-violet-800 transition duration-400" stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+            </svg>
+          </div>
+          <div>
+            <label class="font-semibold" for="end-date">END DATE</label>
+            <input class="block mt-2 w-full outline-none border-b-2 border-violet-600 focus:border-transparent focus:outline-2 focus:outline-violet-600" type="date" id="end-date" name="end-date">
+          </div>
+        </div>
+
+        <div class="group flex justify-center items-center flex-row py-5 px-2 md:p-5 md:mx-2 rounded hover:bg-slate-50 focus:bg-slate-50 transition duration-400">
+          <div class="flex justify-center items-center mr-4 w-12 h-12 rounded bg-violet-100 group-hover:bg-violet-200 group-focus:bg-violet-200 transition duration-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path class="stroke-violet-700 group-hover:stroke-violet-800 group-focus:stroke-violet-800 transition duration-400" stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>          
+          </div>
+          <div>
+            <label class="font-semibold whitespace-nowrap" for="hours-per-day">STUDY HOURS PER DAY</label>
+            <input class="block pl-1 pb-1 mt-2 w-full outline-none border-b-2 border-violet-600 focus:border-transparent focus:outline-2 focus:outline-violet-600" placeholder="6" type="number" id="hours-per-day">
+          </div>
         </div>
       </div>
-
-      <div class="group flex justify-center items-center flex-row p-5 mx-2 rounded-full hover:bg-slate-50 focus:bg-slate-50 transition duration-400">
-        <div class="flex justify-center items-center mr-4 w-12 h-12 rounded-full bg-violet-100 group-hover:bg-violet-200 group-focus:bg-violet-200 transition duration-400">
+      <div class="m-5 w-11/12 rounded-2xl bg-purple-50 p-2 print:hidden">
+        <button id="accordion-btn" class="flex w-full justify-between rounded-lg uppercase bg-purple-100 px-4 py-2 text-left text-base font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+          Select the Chapters
           <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path class="stroke-violet-700 group-hover:stroke-violet-800 group-focus:stroke-violet-800 transition duration-400" stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-          </svg>
-        </div>
-        <div>
-          <label class="font-semibold" for="end-date">END DATE</label>
-          <input class="block mt-2 w-full outline-none border-b-2 border-violet-600 focus:border-transparent focus:outline-2 focus:outline-violet-600" type="date" id="end-date" name="end-date">
-        </div>
-      </div>
-
-      <div class="group flex justify-center items-center flex-row p-5 mx-2 rounded-full hover:bg-slate-50 focus:bg-slate-50 transition duration-400">
-        <div class="flex justify-center items-center mr-4 w-12 h-12 rounded-full bg-violet-100 group-hover:bg-violet-200 group-focus:bg-violet-200 transition duration-400">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path class="stroke-violet-700 group-hover:stroke-violet-800 group-focus:stroke-violet-800 transition duration-400" stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
           </svg>          
-        </div>
-        <div>
-          <label class="font-semibold whitespace-nowrap" for="hours-per-day">STUDY HOURS PER DAY</label>
-          <input class="block pl-1 pb-1 mt-2 w-full outline-none border-b-2 border-violet-600 focus:border-transparent focus:outline-2 focus:outline-violet-600" placeholder="6" type="number" id="hours-per-day">
+        </button>
+        <div id="accordion-content" class="flex-col xl:flex-row w-full px-4 pt-4 pb-2  text-gray-500">
+          <div class="flex flex-col md:flex-row xl:w-1/2">
+            <div class="md:w-1/2  bg-green-100 rounded p-3 m-3">
+              <div class=" ml-3 mt-3 px-1 py-1 shadow-md bg-green-700 rounded-full max-w-min">
+                <div class="rounded-full max-w-max text-white bg-green-500 uppercase px-2 py-1 text-base font-bold">Biology</div>
+              </div>
+              <div class=" my-3 px-3 py-3 text-gray-800 accent-green-600 capitalize space-y-2">
+                <input checked type="checkbox" name="b" value="b1" id="b1" ><label for="b1" class="pl-2">Biodiversity</label><br />
+                <input checked type="checkbox" name="b" value="b2" id="b2" ><label for="b2" class="pl-2">Bioenergetics</label> <br />
+                <input checked type="checkbox" name="b" value="b3" id="b3" ><label for="b3" class="pl-2">Biological Molecules</label><br />
+                <input checked type="checkbox" name="b" value="b4" id="b4" ><label for="b4" class="pl-2">Cell Structure and Function</label> <br />
+                <input checked type="checkbox" name="b" value="b5" id="b5" ><label for="b5" class="pl-2">Coordination and Control (nervous & chemical Coordination)</label> <br />
+                <input checked type="checkbox" name="b" value="b6" id="b6" ><label for="b6" class="pl-2">Diversity among Animals</label> <br />
+                <input checked type="checkbox" name="b" value="b7" id="b7" ><label for="b7" class="pl-2">Enzymes</label> <br />
+                <input checked type="checkbox" name="b" value="b8" id="b8" ><label for="b8" class="pl-2">Evolution</label> <br />
+                <input checked type="checkbox" name="b" value="b9" id="b9" ><label for="b9" class="pl-2">Life process in Animals & Plants (nutrition/ gaseous exchange/ transport)</label> <br />
+                <input checked type="checkbox" name="b" value="b10" id="b10" ><label for="b10" class="pl-2">Prokaryotes</label> <br />
+                <input checked type="checkbox" name="b" value="b11" id="b11" ><label for="b11" class="pl-2">Reproduction</label> <br />
+                <input checked type="checkbox" name="b" value="b12" id="b12" ><label for="b12" class="pl-2">Support & movement</label> <br />
+                <input checked type="checkbox" name="b" value="b13" id="b13" ><label for="b13" class="pl-2">Variation & genetics/ inheritance</label>
+              </div>
+            </div>
+            <div class="md:w-1/2  bg-pink-100 rounded p-3 m-3">
+              <div class=" ml-3 mt-3 px-1 py-1 shadow-md bg-pink-700 rounded-full max-w-min">
+                <div class="rounded-full max-w-max text-white bg-pink-500 uppercase px-2 py-1 text-base font-bold">Chemistry</div>
+              </div>
+              <div class=" my-3 px-3 py-3 text-gray-800 accent-pink-600 capitalize space-y-2">
+                <input checked type="checkbox" name="c" value="c1" id="c1" ><label for="c1" class="pl-2">Introduction to fundamental concepts of chemistry</label><br />
+                <input checked type="checkbox" name="c" value="c2" id="c2" ><label for="c2" class="pl-2">Atomic Structure</label> <br />
+                <input checked type="checkbox" name="c" value="c3" id="c3" ><label for="c3" class="pl-2">Gases</label><br />
+                <input checked type="checkbox" name="c" value="c4" id="c4" ><label for="c4" class="pl-2">Liquids</label> <br />
+                <input checked type="checkbox" name="c" value="c5" id="c5" ><label for="c5" class="pl-2">Solids</label> <br />
+                <input checked type="checkbox" name="c" value="c6" id="c6" ><label for="c6" class="pl-2">chemical equilibrium</label> <br />
+                <input checked type="checkbox" name="c" value="c7" id="c7" ><label for="c7" class="pl-2">reaction kinetics</label> <br />
+                <input checked type="checkbox" name="c" value="c8" id="c8" ><label for="c8" class="pl-2">Thermo-chemistry and Energetics of chemical reactions</label> <br />
+                <input checked type="checkbox" name="c" value="b9" id="c9" ><label for="c9" class="pl-2">Electrochemistry</label> <br />
+                <input checked type="checkbox" name="c" value="c10" id="c10" ><label for="c10" class="pl-2">chemical bonding</label> <br />
+                <input checked type="checkbox" name="c" value="c11" id="c11" ><label for="c11" class="pl-2">S and p block elements</label> <br />
+                <input checked type="checkbox" name="c" value="c12" id="c12" ><label for="c12" class="pl-2">Transition Elements</label> <br />
+                <input checked type="checkbox" name="c" value="c13" id="c13" ><label for="c13" class="pl-2">Fundamental principles of organic chemistry</label><br />
+                <input checked type="checkbox" name="c" value="c14" id="c14" ><label for="c14" class="pl-2">Chemistry of Hydrocarbons</label> <br />
+                <input checked type="checkbox" name="c" value="c15" id="c15" ><label for="c15" class="pl-2">Alkyl halides</label> <br />
+                <input checked type="checkbox" name="c" value="c16" id="c16" ><label for="c16" class="pl-2">Alcohols & phenols</label> <br />
+                <input checked type="checkbox" name="c" value="c17" id="c17" ><label for="c17" class="pl-2">Aldehydes and Ketones</label> <br />
+                <input checked type="checkbox" name="c" value="c18" id="c18" ><label for="c18" class="pl-2">Carboxylic acid</label> </br />
+                <input checked type="checkbox" name="c" value="c19" id="c19" ><label for="c19" class="pl-2">Macromolecules</label> </br />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row xl:w-1/2">
+            <div class="md:w-1/2  bg-teal-100 rounded p-3 m-3">
+              <div class=" ml-3 mt-3 px-1 py-1 shadow-md bg-teal-700 rounded-full max-w-min">
+                <div class="rounded-full max-w-max text-white bg-teal-500 uppercase px-2 py-1 text-base font-bold">Physics</div>
+              </div>
+              <div class=" my-3 px-3 py-3 text-gray-800 accent-teal-600 capitalize space-y-2">
+                <input checked type="checkbox" name="p" value="p1" id="p1" ><label for="p1" class="pl-2">Force and motion</label><br />
+                <input checked type="checkbox" name="p" value="p2" id="p2" ><label for="p2" class="pl-2">Work and energy</label> <br />
+                <input checked type="checkbox" name="p" value="p3" id="p3" ><label for="p3" class="pl-2">Rotational and circular motion</label><br />
+                <input checked type="checkbox" name="p" value="p4" id="p4" ><label for="p4" class="pl-2">Waves</label> <br />
+                <input checked type="checkbox" name="p" value="p5" id="p5" ><label for="p5" class="pl-2">Thermodynamics</label> <br />
+                <input checked type="checkbox" name="p" value="p6" id="p6" ><label for="p6" class="pl-2">Electrostatics</label> <br />
+                <input checked type="checkbox" name="p" value="p7" id="p7" ><label for="p7" class="pl-2">Current Electricity</label> <br />
+                <input checked type="checkbox" name="p" value="p8" id="p8" ><label for="p8" class="pl-2">Electromagnetism</label> <br />
+                <input checked type="checkbox" name="p" value="p9" id="p9" ><label for="p9" class="pl-2">Electromagnetic Induction</label> <br />
+                <input checked type="checkbox" name="p" value="p10" id="p10" ><label for="p10" class="pl-2">Electronics</label> <br />
+                <input checked type="checkbox" name="p" value="p11" id="p11" ><label for="p11" class="pl-2">Dawn of modern Physics</label> <br />
+                <input checked type="checkbox" name="p" value="p12" id="p12" ><label for="p12" class="pl-2">Atomic spectra</label> <br />
+                <input checked type="checkbox" name="p" value="p13" id="p13" ><label for="p13" class="pl-2">Nuclear Physics</label>
+              </div>
+            </div>
+            <div class="md:w-1/2  bg-rose-100 rounded p-3 m-3">
+              <div class=" ml-3 mt-3 px-1 py-1 shadow-md bg-rose-700 rounded-full max-w-min">
+                <div class="rounded-full max-w-max text-white bg-rose-500 uppercase px-2 py-1 text-base font-bold">English</div>
+              </div>
+              <div class=" my-3 px-3 py-3 text-gray-800 accent-rose-600 capitalize space-y-2">
+                <input checked type="checkbox" name="e" value="e1" id="e1" ><label for="e1" class="pl-2">Comprehend key vocabulary</label><br />
+                <input checked type="checkbox" name="e" value="e2" id="e2" ><label for="e2" class="pl-2">Demonstrate control of tenses and sentence structure</label> <br />
+                <input checked type="checkbox" name="e" value="e3" id="e3" ><label for="e3" class="pl-2">Demonstrate ability to differentiate between correct and incorrect structure of sentences & Use of writing conventions of spelling, capitalization and Punctuation</label><br />
+                <input checked type="checkbox" name="e" value="e4" id="e4" ><label for="e4" class="pl-2">Demonstrate correct use of subject-verb agreement & of articles and prepositions</label> <br />
+                <input checked type="checkbox" name="e" value="e5" id="e5" ><label for="e5" class="pl-2">Demonstrate ability to identify mistakes in sentences or short written texts. These errors could be of inappropriate word order, vocabulary etc</label> <br />
+                <input checked type="checkbox" name="e" value="e6" id="e6" ><label for="e6" class="pl-2">Demonstrate ability to comprehend short written text and select the most appropriate responses</label> <br />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="m-5 w-11/12 rounded-2xl bg-purple-50 p-2 print:hidden">
-      <button id="accordion-btn" class="flex w-full justify-between rounded-lg uppercase bg-purple-100 px-4 py-2 text-left text-base font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-        Select the Chapters
-        <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-        </svg>          
-      </button>
-      <div id="accordion-content" class="px-4 pt-4 pb-2 text-base text-gray-500">
-        <div class="w-1/4">
-          <label class="block"><input type="checkbox" name="topics" value="b1"> Topic 1</label>
-          <label class="block"><input type="checkbox" name="topics" value="b2"> Topic 2</label>
-          <label class="block"><input type="checkbox" name="topics" value="b3"> Topic 3</label>
-        </div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <div class="print:hidden">
+        <button class="flex items-center px-12 py-5 rounded font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-violet-700 hover:bg-violet-500 focus:outline-none focus:ring focus:ring-violet-300 focus:ring-opacity-80" id="submitBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+          </svg>
+          <span class="mx-1">GENERATE</span>          
+        </button>
+        <!-- <button id="download-pdf" class="flex items-center px-12 py-5 rounded font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-violet-700 hover:bg-violet-500 focus:outline-none focus:ring focus:ring-violet-300 focus:ring-opacity-80">
+          Download PDF</button> -->
       </div>
-    </div>
-    <div class="print:hidden">
-      <button class="flex items-center px-12 py-5 rounded-full font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-violet-700 hover:bg-violet-500 focus:outline-none focus:ring focus:ring-violet-300 focus:ring-opacity-80" id="submitBtn">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
-        </svg>
-        <span class="mx-1">GENERATE</span>          
-      </button>
-      <!-- <button id="download-pdf" class="flex items-center px-12 py-5 rounded-full font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-violet-700 hover:bg-violet-500 focus:outline-none focus:ring focus:ring-violet-300 focus:ring-opacity-80">
-        Download PDF</button> -->
     </div>
     
 
-    <div id="study-plan-container" class="flex flex-wrap">
-      <div class="card flex items-center max-w-md m-8 border bg-gray-50 shadow-lg rounded px-6 py-4">
-        <div class="card-date flex flex-col justify-center items-center w-20 h-20 mr-8 rounded shadow bg-violet-800 text-white">
-          <div class="date-number text-4xl">22
-          </div>
-          <div class="date-month text-xl font-semibold uppercase">Feb
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="chp-container font-bold text-gray-800 text-xl mb-2 capitalize">
-            <div class="chp-title border-b-2 border-b-violet-700 pb-1 pt-2">Biodiversity (1 hour)</div>
-            <div class="chp-title border-b-2 border-b-violet-700 pb-1 pt-2">Bioenergetics (1 hour)</div>
-          </div>
-          <div class="chp-desc">
-          </div>
-          <div class="card-footer font-medium uppercase">Total hours: 2
-          </div>
-        </div>
-      </div>
+    <div id="study-plan-container" class="flex flex-wrap justify-between">
+      
     </div>
+    
+    
 
   </div>
     <script src="./script-test.js"></script>

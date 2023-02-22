@@ -12,14 +12,18 @@ function accordionClick() {
     // Open the print preview dialog
     window.print();
 }); */
-  
+
+//////////////////  CHECKBOX CODE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+ 
+
 
 const chapters = {
     'b1' : {
         id : 'b1',
         title : 'Biodiversity',
         description : 'Viruses',
-        difficulty : 1
+        difficulty : 5
     },
     'b2' : {
         id : 'b2',
@@ -29,16 +33,20 @@ const chapters = {
     },
     'b3' : {
         id : 'b3',
-        title : 'Biomolecules',
+        title : 'Biological Molecules',
         description : 'Viruses',
         difficulty : 3
     }
 }
   
 const submitBtn = document.getElementById('submitBtn');
+const studyPlanContainer = document.getElementById("study-plan-container");
 
 submitBtn.addEventListener('click', () => {
-  
+    
+  studyPlanContainer.innerHTML = '';
+  document.getElementById("accordion-content").classList.toggle("show");
+
     let startDate = new Date(document.getElementById("start-date").value);
     let endDate = new Date(document.getElementById("end-date").value);
     let hoursPerDay = document.getElementById("hours-per-day").value;
@@ -85,7 +93,7 @@ submitBtn.addEventListener('click', () => {
     let currentDate = new Date(startDate.getTime());
     let day = 1;
     let hoursLeft = hoursPerDay;
-    const studyPlanContainer = document.getElementById("study-plan-container");
+    
 
     while (currentDate <= endDate) {
         let topicsForDay = [];
@@ -97,7 +105,7 @@ submitBtn.addEventListener('click', () => {
           
             if (topicTime <= hoursLeft) {
                 if (topicTime >= 1) {
-                    const topicTimeInMinutes = Math.floor(topicTime * 60);
+                    const topicTimeInMinutes = Math.ceil(topicTime * 60);
                     const hours = Math.floor(topicTime);
                     const minutes = topicTimeInMinutes - hours * 60;
                     let topicTimeString = `${hours} hour${hours > 1 ? 's' : ''}`;
@@ -108,7 +116,7 @@ submitBtn.addEventListener('click', () => {
                     totalHoursForDay += topicTime;
                     hoursLeft -= topicTime;
                 } else {
-                    const topicTimeInMinutes = Math.round(topicTime * 60);
+                    const topicTimeInMinutes = Math.ceil(topicTime * 60);
                     topicsForDay.push(`${topic} (${topicTimeInMinutes} minute${topicTimeInMinutes > 1 ? 's' : ''})`);
                     totalHoursForDay += topicTimeInMinutes / 60;
                     hoursLeft -= topicTimeInMinutes / 60;
@@ -139,22 +147,22 @@ submitBtn.addEventListener('click', () => {
         const formattedDate = currentDate.getDate();
         const formattedMonth = currentDate.toLocaleDateString('en-US', { month: 'short' });
         
-
+       
         // Create the study plan card for the current day
         const card = document.createElement('div');
-        card.classList.add('card', 'bg-purple-100');
+        card.classList.add('card', 'flex', 'items-center','max-w-md', 'm-8', 'border', 'bg-gray-50', 'shadow-lg', 'rounded', 'px-6', 'py-4');
 
         const cardDate = document.createElement('div');
-        cardDate.classList.add('card-date');
+        cardDate.classList.add('card-date',"flex","flex-col","justify-center","items-center","w-20","h-20","mr-8","rounded","shadow","bg-violet-800","text-white");
         card.appendChild(cardDate);
 
         const dateNumber = document.createElement('div');
-        dateNumber.classList.add('date-number');
+        dateNumber.classList.add('date-number', 'text-4xl');
         dateNumber.innerText = formattedDate;
         cardDate.appendChild(dateNumber);
 
         const dateMonth = document.createElement('div');
-        dateMonth.classList.add('date-month');
+        dateMonth.classList.add('date-month', 'text-xl', 'font-semibold', 'uppercase');
         dateMonth.innerText = formattedMonth;
         cardDate.appendChild(dateMonth);
 
@@ -165,13 +173,13 @@ submitBtn.addEventListener('click', () => {
             const noTopic = document.createElement('div');
             noTopic.classList.add('card-text');
             noTopic.innerText = 'No topics for the day';
-            chpTitle.appendChild(noTopic);
+            cardBody.appendChild(noTopic);
         } else {
             const chpContainer = document.createElement('div');
-            chpContainer.classList.add('chp-container');
+            chpContainer.classList.add('chp-container', "chp-container", "font-bold", "text-gray-800", "text-xl", "mb-2", "capitalize");
             topicsForDay.forEach(topic => {
             const chpTitle = document.createElement('div');
-            chpTitle.classList.add('chp-title');
+            chpTitle.classList.add('chp-title', "border-b-2", "border-b-violet-700", "pb-1", "pt-2");
             chpTitle.innerText = topic;
             chpContainer.appendChild(chpTitle);
             });
@@ -185,7 +193,7 @@ submitBtn.addEventListener('click', () => {
 
         if (topicsForDay.length > 1) {
             const cardFooter = document.createElement('div');
-            cardFooter.classList.add('card-footer');
+            cardFooter.classList.add('card-footer', 'font-medium', 'uppercase');
             cardFooter.innerText = 'Total hours: ' + Math.round(totalHoursForDay);
             cardBody.appendChild(cardFooter);
         }
