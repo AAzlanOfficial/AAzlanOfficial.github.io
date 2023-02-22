@@ -43,7 +43,7 @@
           </div>
           <div>
             <label class="font-semibold whitespace-nowrap" for="hours-per-day">STUDY HOURS PER DAY</label>
-            <input class="block pl-1 pb-1 mt-2 w-full outline-none border-b-2 border-violet-600 focus:border-transparent focus:outline-2 focus:outline-violet-600" placeholder="6" type="number" id="hours-per-day">
+            <input min="0" max="24" class="block pl-1 pb-1 mt-2 w-full outline-none border-b-2 border-violet-600 focus:border-transparent focus:outline-2 focus:outline-violet-600" placeholder="6" type="number" id="hours-per-day">
           </div>
         </div>
       </div>
@@ -57,9 +57,12 @@
         <div id="accordion-content" class="flex-col xl:flex-row w-full px-4 pt-4 pb-2  text-gray-500">
           <div class="flex flex-col md:flex-row xl:w-1/2">
             <div class="md:w-1/2  bg-green-100 rounded p-3 m-3 shadow-sm">
-              <div class=" ml-3 mt-3 px-1 py-1 shadow bg-green-700 rounded-full max-w-min">
-                <div id="div-b" class="rounded-full max-w-max text-white bg-green-500 uppercase px-2 py-1 text-base font-bold">Biology</div>
-              </div>
+              
+                <div  class="rounded w-auto text-white bg-green-500 accent-white uppercase px-2 py-1 text-base font-bold">
+                  <input checked id="div-b" type="checkbox" />
+                  <label for="div-b" class="pl-2">Biology</label> 
+                </div>
+              
               <div class=" my-3 px-3 py-3 text-gray-800 accent-green-600 capitalize space-y-2">
                 <input checked type="checkbox" name="b" value="b1" id="b1" ><label for="b1" class="pl-2">Biodiversity</label><br />
                 <input checked type="checkbox" name="b" value="b2" id="b2" ><label for="b2" class="pl-2">Bioenergetics</label> <br />
